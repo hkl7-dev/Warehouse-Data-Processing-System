@@ -3,8 +3,7 @@
 ## Task 2 — K-Way Heap Merge Flowchart
 
 ```
-![K-Way Merge Flowchart](https://github.com/user-attachments/assets/ad61c5c3-f2a4-4f80-87ce-a3b306c76016)
-```
+[![K-Way Merge Flowchart](https://github.com/user-attachments/assets/ad61c5c3-f2a4-4f80-87ce-a3b306c76016)](https://github.com/user-attachments/assets/ad61c5c3-f2a4-4f80-87ce-a3b306c76016)```
 
 ---
 
