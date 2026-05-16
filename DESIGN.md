@@ -208,4 +208,4 @@ FUNCTION count_per_container(dispatch):
 
     return report
 ```
-Image of Original Draw Flowchart --> <a id='1.1'>![K-Way Merge Flowchart](images/flowchart.jpg)</a>
+Image of Original Draw Flowchart --> <a id='flowchart-markdown'>![K-Way Merge Flowchart](images/flowchart.jpg)</a>
