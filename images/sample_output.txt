@@ -1,0 +1,182 @@
+// This is a sample output of the terminal after running the main .c file.
+-------------------------------------------------
+ TASK 0 -- Raw test data from CSV
+-------------------------------------------------
+  40 records loaded from file.
+
+  Cont Time       Weight   Product  Temp  Courier 
+  ------------------------------------------------------
+  [C1] 12:15:06  product=101    weight= 12.0kg  temp= 5C  courier=1
+  [C1] 15:49:52  product=102    weight= 23.0kg  temp= 8C  courier=1
+  [C1] 12:20:13  product=103    weight= 19.0kg  temp= 7C  courier=1
+  [C1] 09:57:18  product=104    weight= 24.0kg  temp= 4C  courier=1
+  [C1] 13:42:32  product=105    weight= 25.0kg  temp= 8C  courier=1
+  [C1] 15:23:52  product=106    weight= 10.0kg  temp= 4C  courier=1
+  [C1] 13:58:31  product=107    weight= 12.0kg  temp= 8C  courier=1
+  [C1] 10:31:22  product=108    weight=  6.0kg  temp= 4C  courier=1
+  [C1] 15:29:38  product=109    weight=  9.0kg  temp= 8C  courier=1
+  [C1] 10:25:12  product=110    weight=  9.0kg  temp= 7C  courier=1
+  [C2] 11:54:33  product=101    weight= 12.0kg  temp= 5C  courier=2
+  [C2] 16:59:51  product=102    weight= 20.0kg  temp= 5C  courier=2
+  [C2] 10:39:19  product=103    weight= 22.0kg  temp= 3C  courier=2
+  [C2] 14:02:58  product=104    weight=  9.0kg  temp= 3C  courier=2
+  [C2] 13:31:54  product=105    weight= 11.0kg  temp= 3C  courier=2
+  [C2] 08:27:46  product=106    weight= 12.0kg  temp= 6C  courier=2
+  [C2] 13:03:15  product=107    weight= 15.0kg  temp= 6C  courier=2
+  [C2] 15:39:42  product=108    weight= 11.0kg  temp= 8C  courier=2
+  [C2] 11:56:28  product=109    weight= 12.0kg  temp= 6C  courier=2
+  [C2] 15:15:54  product=110    weight=  8.0kg  temp= 5C  courier=2
+  [C3] 08:25:09  product=101    weight= 16.0kg  temp= 7C  courier=3
+  [C3] 14:40:19  product=102    weight= 12.0kg  temp= 4C  courier=3
+  [C3] 12:14:44  product=103    weight=  9.0kg  temp= 5C  courier=3
+  [C3] 12:47:35  product=104    weight= 10.0kg  temp= 4C  courier=3
+  [C3] 10:29:31  product=105    weight= 24.0kg  temp= 7C  courier=3
+  [C3] 10:46:57  product=106    weight= 13.0kg  temp= 6C  courier=3
+  [C3] 16:14:22  product=107    weight= 18.0kg  temp= 4C  courier=3
+  [C3] 15:07:40  product=108    weight=  8.0kg  temp= 4C  courier=3
+  [C3] 16:33:43  product=109    weight= 11.0kg  temp= 5C  courier=3
+  [C3] 13:08:05  product=110    weight= 22.0kg  temp= 5C  courier=3
+  [C4] 08:25:09  product=101    weight= 16.0kg  temp= 7C  courier=4
+  [C4] 14:40:19  product=102    weight= 12.0kg  temp= 4C  courier=4
+  [C4] 12:14:44  product=103    weight=  9.0kg  temp= 5C  courier=4
+  [C4] 12:47:35  product=104    weight= 10.0kg  temp= 4C  courier=4
+  [C4] 10:29:31  product=105    weight= 24.0kg  temp= 7C  courier=4
+  [C4] 10:46:57  product=106    weight= 13.0kg  temp= 6C  courier=4
+  [C4] 16:14:22  product=107    weight= 18.0kg  temp= 4C  courier=4
+  [C4] 15:07:40  product=108    weight=  8.0kg  temp= 4C  courier=4
+  [C4] 16:33:43  product=109    weight= 11.0kg  temp= 5C  courier=4
+  [C4] 13:08:05  product=110    weight= 22.0kg  temp= 5C  courier=4
+
+  Press ENTER to continue...
+
+-------------------------------------------------
+ TASK 1 -- Each file sorted by time  O(N log N)
+-------------------------------------------------
+
+  Container 1 -- 10 records:
+  [C1] 09:57:18  product=104    weight= 24.0kg  temp= 4C  courier=1
+  [C1] 10:25:12  product=110    weight=  9.0kg  temp= 7C  courier=1
+  [C1] 10:31:22  product=108    weight=  6.0kg  temp= 4C  courier=1
+  [C1] 12:15:06  product=101    weight= 12.0kg  temp= 5C  courier=1
+  [C1] 12:20:13  product=103    weight= 19.0kg  temp= 7C  courier=1
+  [C1] 13:42:32  product=105    weight= 25.0kg  temp= 8C  courier=1
+  [C1] 13:58:31  product=107    weight= 12.0kg  temp= 8C  courier=1
+  [C1] 15:23:52  product=106    weight= 10.0kg  temp= 4C  courier=1
+  [C1] 15:29:38  product=109    weight=  9.0kg  temp= 8C  courier=1
+  [C1] 15:49:52  product=102    weight= 23.0kg  temp= 8C  courier=1
+
+  Container 2 -- 10 records:
+  [C2] 08:27:46  product=106    weight= 12.0kg  temp= 6C  courier=2
+  [C2] 10:39:19  product=103    weight= 22.0kg  temp= 3C  courier=2
+  [C2] 11:54:33  product=101    weight= 12.0kg  temp= 5C  courier=2
+  [C2] 11:56:28  product=109    weight= 12.0kg  temp= 6C  courier=2
+  [C2] 13:03:15  product=107    weight= 15.0kg  temp= 6C  courier=2
+  [C2] 13:31:54  product=105    weight= 11.0kg  temp= 3C  courier=2
+  [C2] 14:02:58  product=104    weight=  9.0kg  temp= 3C  courier=2
+  [C2] 15:15:54  product=110    weight=  8.0kg  temp= 5C  courier=2
+  [C2] 15:39:42  product=108    weight= 11.0kg  temp= 8C  courier=2
+  [C2] 16:59:51  product=102    weight= 20.0kg  temp= 5C  courier=2
+
+  Container 3 -- 10 records:
+  [C3] 08:25:09  product=101    weight= 16.0kg  temp= 7C  courier=3
+  [C3] 10:29:31  product=105    weight= 24.0kg  temp= 7C  courier=3
+  [C3] 10:46:57  product=106    weight= 13.0kg  temp= 6C  courier=3
+  [C3] 12:14:44  product=103    weight=  9.0kg  temp= 5C  courier=3
+  [C3] 12:47:35  product=104    weight= 10.0kg  temp= 4C  courier=3
+  [C3] 13:08:05  product=110    weight= 22.0kg  temp= 5C  courier=3
+  [C3] 14:40:19  product=102    weight= 12.0kg  temp= 4C  courier=3
+  [C3] 15:07:40  product=108    weight=  8.0kg  temp= 4C  courier=3
+  [C3] 16:14:22  product=107    weight= 18.0kg  temp= 4C  courier=3
+  [C3] 16:33:43  product=109    weight= 11.0kg  temp= 5C  courier=3
+
+  Container 4 -- 10 records:
+  [C4] 08:25:09  product=101    weight= 16.0kg  temp= 7C  courier=4
+  [C4] 10:29:31  product=105    weight= 24.0kg  temp= 7C  courier=4
+  [C4] 10:46:57  product=106    weight= 13.0kg  temp= 6C  courier=4
+  [C4] 12:14:44  product=103    weight=  9.0kg  temp= 5C  courier=4
+  [C4] 12:47:35  product=104    weight= 10.0kg  temp= 4C  courier=4
+  [C4] 13:08:05  product=110    weight= 22.0kg  temp= 5C  courier=4
+  [C4] 14:40:19  product=102    weight= 12.0kg  temp= 4C  courier=4
+  [C4] 15:07:40  product=108    weight=  8.0kg  temp= 4C  courier=4
+  [C4] 16:14:22  product=107    weight= 18.0kg  temp= 4C  courier=4
+  [C4] 16:33:43  product=109    weight= 11.0kg  temp= 5C  courier=4
+
+  Press ENTER to continue...
+
+-------------------------------------------------
+ TASK 2 -- Merged dispatch list  O(N)
+-------------------------------------------------
+
+  40 records merged into one time-ordered list:
+
+  [C3] 08:25:09  product=101    weight= 16.0kg  temp= 7C  courier=3
+  [C4] 08:25:09  product=101    weight= 16.0kg  temp= 7C  courier=4
+  [C2] 08:27:46  product=106    weight= 12.0kg  temp= 6C  courier=2
+  [C1] 09:57:18  product=104    weight= 24.0kg  temp= 4C  courier=1
+  [C1] 10:25:12  product=110    weight=  9.0kg  temp= 7C  courier=1
+  [C4] 10:29:31  product=105    weight= 24.0kg  temp= 7C  courier=4
+  [C3] 10:29:31  product=105    weight= 24.0kg  temp= 7C  courier=3
+  [C1] 10:31:22  product=108    weight=  6.0kg  temp= 4C  courier=1
+  [C2] 10:39:19  product=103    weight= 22.0kg  temp= 3C  courier=2
+  [C4] 10:46:57  product=106    weight= 13.0kg  temp= 6C  courier=4
+  [C3] 10:46:57  product=106    weight= 13.0kg  temp= 6C  courier=3
+  [C2] 11:54:33  product=101    weight= 12.0kg  temp= 5C  courier=2
+  [C2] 11:56:28  product=109    weight= 12.0kg  temp= 6C  courier=2
+  [C4] 12:14:44  product=103    weight=  9.0kg  temp= 5C  courier=4
+  [C3] 12:14:44  product=103    weight=  9.0kg  temp= 5C  courier=3
+  [C1] 12:15:06  product=101    weight= 12.0kg  temp= 5C  courier=1
+  [C1] 12:20:13  product=103    weight= 19.0kg  temp= 7C  courier=1
+  [C4] 12:47:35  product=104    weight= 10.0kg  temp= 4C  courier=4
+  [C3] 12:47:35  product=104    weight= 10.0kg  temp= 4C  courier=3
+  [C2] 13:03:15  product=107    weight= 15.0kg  temp= 6C  courier=2
+  [C3] 13:08:05  product=110    weight= 22.0kg  temp= 5C  courier=3
+  [C4] 13:08:05  product=110    weight= 22.0kg  temp= 5C  courier=4
+  [C2] 13:31:54  product=105    weight= 11.0kg  temp= 3C  courier=2
+  [C1] 13:42:32  product=105    weight= 25.0kg  temp= 8C  courier=1
+  [C1] 13:58:31  product=107    weight= 12.0kg  temp= 8C  courier=1
+  [C2] 14:02:58  product=104    weight=  9.0kg  temp= 3C  courier=2
+  [C3] 14:40:19  product=102    weight= 12.0kg  temp= 4C  courier=3
+  [C4] 14:40:19  product=102    weight= 12.0kg  temp= 4C  courier=4
+  [C3] 15:07:40  product=108    weight=  8.0kg  temp= 4C  courier=3
+  [C4] 15:07:40  product=108    weight=  8.0kg  temp= 4C  courier=4
+  [C2] 15:15:54  product=110    weight=  8.0kg  temp= 5C  courier=2
+  [C1] 15:23:52  product=106    weight= 10.0kg  temp= 4C  courier=1
+  [C1] 15:29:38  product=109    weight=  9.0kg  temp= 8C  courier=1
+  [C2] 15:39:42  product=108    weight= 11.0kg  temp= 8C  courier=2
+  [C1] 15:49:52  product=102    weight= 23.0kg  temp= 8C  courier=1
+  [C3] 16:14:22  product=107    weight= 18.0kg  temp= 4C  courier=3
+  [C4] 16:14:22  product=107    weight= 18.0kg  temp= 4C  courier=4
+  [C3] 16:33:43  product=109    weight= 11.0kg  temp= 5C  courier=3
+  [C4] 16:33:43  product=109    weight= 11.0kg  temp= 5C  courier=4
+  [C2] 16:59:51  product=102    weight= 20.0kg  temp= 5C  courier=2
+
+  Press ENTER to continue...
+
+-------------------------------------------------
+ TASK 3 -- Search dispatch list  O(log N)
+-------------------------------------------------
+
+  Enter search time (HH:MM:SS): 14:02:58
+  Enter product code (-1 for any): -1
+
+  Result (dispatch index 25):
+  [C2] 14:02:58  product=104    weight=  9.0kg  temp= 3C  courier=2
+
+  Search again? (y/n): n
+
+  Press ENTER to continue...
+
+-------------------------------------------------
+ TASK 4 -- Container product count report  O(N)
+-------------------------------------------------
+
+  Container      Products   Avg weight   Avg temp   Couriers
+  ------------------------------------------------------------
+  Container 01         10      14.9 kg      6.3 C   1 
+  Container 02         10      13.2 kg      5.0 C   2 
+  Container 03         10      14.3 kg      5.1 C   3 
+  Container 04         10      14.3 kg      5.1 C   4 
+
+-------------------------------------------------
+ Demo complete.
+-------------------------------------------------
