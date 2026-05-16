@@ -1,6 +1,6 @@
 # Design Document
 
-## Task 2 — K-Way Heap Merge Flowchart - (#The original is at at the end of the file)
+## Task 2 — K-Way Heap Merge Flowchart - [The original is at at the end of the file](#flowchart-markdown)
 ```
 ┌─────────────────────────────────────────────┐
 │                    START                    │
@@ -208,4 +208,4 @@ FUNCTION count_per_container(dispatch):
 
     return report
 ```
-Image of Original Draw Flowchart --> ![K-Way Merge Flowchart](images/flowchart.jpg)
+Image of Original Draw Flowchart --> <a id='1.1'>![K-Way Merge Flowchart](images/flowchart.jpg)</a>
