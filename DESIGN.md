@@ -1,6 +1,7 @@
 # Design Document
 
 ## Task 2 — K-Way Heap Merge Flowchart
+Image of Original Draw Flowchart --> ![K-Way Merge Flowchart](images/flowchart.jpg)
 
 ```
 ┌─────────────────────────────────────────────┐
@@ -55,7 +56,6 @@
 │              END — Dispatch list complete                │
 └─────────────────────────────────────────────────────────┘
 ```
-
 ---
 
 ## Pseudocode
