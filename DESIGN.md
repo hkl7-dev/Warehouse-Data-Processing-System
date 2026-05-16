@@ -3,7 +3,59 @@
 ## Task 2 — K-Way Heap Merge Flowchart
 
 ```
-![K-Way Merge Flowchart](images/Picture 1.jpg
+┌─────────────────────────────────────────────┐
+│                    START                    │
+└─────────────────────┬───────────────────────┘
+                      │
+┌─────────────────────▼───────────────────────┐
+│  Seed heap with first record from each      │
+│  file — 1 per file / 4 in total             │
+└─────────────────────┬───────────────────────┘
+                      │
+┌─────────────────────▼───────────────────────┐
+│         Initialise dispatch list            │
+│                  (empty)                    │
+└─────────────────────┬───────────────────────┘
+                      │
+        ┌─────────────▼─────────────┐
+        │      Check heap size = 0  │◄─────────────────┐
+        └──────┬────────────────────┘                  │
+               │                                       │
+              No                                      Yes
+               │                                       │
+┌──────────────▼──────────────────────┐               │
+│  Pop record with smallest timestamp │               │
+│         (k is always 4)             │               │
+└──────────────┬──────────────────────┘               │
+               │                                       │
+┌──────────────▼──────────────────────┐               │
+│    Append record to dispatch list   │               │
+└──────────────┬──────────────────────┘               │
+               │                                       │
+┌──────────────▼──────────────────────┐               │
+│      Advance file pointer by 1      │               │
+└──────────────┬──────────────────────┘               │
+               │                                       │
+        ┌──────▼──────────────────────┐               │
+        │  Does the file have more    │               │
+        │        records?             │               │
+        └──────┬──────────────────────┘               │
+               │                                       │
+              Yes                     No ──────────────┘
+               │
+┌──────────────▼──────────────────────┐
+│   Push next record from file        │
+│          onto heap                  │
+└──────────────┬──────────────────────┘
+               │
+               └──────────────────────────────────────┐
+                                                       │
+                                             (back to check heap)
+┌──────────────────────────────────────────────────────▼──┐
+│              END — Dispatch list complete                │
+└─────────────────────────────────────────────────────────┘
+```
+
 ---
 
 ## Pseudocode
@@ -46,7 +98,7 @@ FUNCTION merge(left, right):
 RUN FOR EACH of the 4 team files:
     sorted_file = merge_sort(team_file)
 ```
-
+Look at the image here --> ![K-Way Merge Flowchart](images/Picture 1.jpg)
 ---
 
 ### Task 2 — K-Way Heap Merge — O(N)
